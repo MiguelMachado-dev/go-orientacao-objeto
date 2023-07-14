@@ -21,6 +21,12 @@ func main() {
 	var contaDaCris *ContaCorrente
 	contaDaCris = new(ContaCorrente)
 	contaDaCris.titular = "Cris"
+	contaDaCris.saldo = 500
 
-	fmt.Println(*contaDaCris)
+	var contaDaCris2 *ContaCorrente
+	contaDaCris2 = new(ContaCorrente)
+	contaDaCris2.titular = "Cris"
+	contaDaCris2.saldo = 500
+
+	fmt.Println(*contaDaCris == *contaDaCris2)
 }
